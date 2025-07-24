@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 002</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body
+    class="bg-gradient-to-br from-gray-100 to-gray-300 min-h-screen flex items-center justify-center p-4"
+  >
+    <main class="w-full max-w-md">
+      <section
+        class="bg-white p-6 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl border border-gray-200"
+      >
+        <form action="" class="space-y-4">
+          <h1 class="text-center font-bold text-3xl text-gray-700 mb-2">
+            User Information
+          </h1>
+          <div class="relative group">
+            <input
+              type="text"
+              name="name"
+              autocomplete="name"
+              id="fullName"
+              class="w-full rounded-lg border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 peer"
+              placeholder="Full Name"
+            />
+          </div>
+          <div class="relative group">
+            <input
+              type="number"
+              id="age"
+              class="w-full rounded-lg border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 peer"
+              placeholder="Age"
+            />
+          </div>
+          <div class="relative group">
+            <input
+              type="email"
+              name="email"
+              autocomplete="email"
+              id="email"
+              class="w-full rounded-lg border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 peer"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="relative group">
+            <input
+              type="text"
+              name="job-title"
+              autocomplete="organization-title"
+              id="position"
+              class="w-full rounded-lg border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 peer"
+              placeholder="Position"
+            />
+          </div>
+          <div class="relative group">
+            <input
+              type="file"
+              id="avatar"
+              class="w-full rounded-lg border border-gray-300 p-3 bg-gray-100 text-gray-700 file:px-3 file:py-1 file:rounded-md file:border-0 file:bg-blue-600 file:text-white hover:file:bg-blue-700 transition cursor-pointer file:cursor-pointer"
+              accept="image/*"
+            />
+          </div>
+          <button
+            type="button"
+            onclick="showUserCard()"
+            id="submitBtn"
+            class="w-full bg-blue-600 hover:bg-blue-700 transition-all duration-200 text-white font-semibold rounded-lg py-3 mt-2 shadow-md hover:shadow-lg transform hover:scale-105 cursor-pointer"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+      <section
+        id="card"
+        class="bg-white p-6 rounded-2xl mt-6 text-center shadow-xl border border-gray-200 transition-all duration-300"
+        style="display: none"
+      >
+        <img
+          id="userImage"
+          class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-4 border-blue-500 shadow-md"
+        />
+        <h2
+          id="userName"
+          class="font-semibold text-2xl text-gray-800 mb-1"
+        ></h2>
+        <p id="userAge" class="text-gray-600 mb-1"></p>
+        <p id="userEmail" class="text-gray-600 mb-1"></p>
+        <p id="userPosition" class="text-gray-600"></p>
+      </section>
+    </main>
+    <script src="../node_modules/preline/dist/preline.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ],
+    "no-inline-styles": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "-webkit-text-size-adjust",
+          "background-color: color-mix(in srgb, oklch(21% 0.034 264.665) 50%, transparent)",
+          "text-wrap",
+          "text-wrap: nowrap",
+          "text-wrap: wrap",
+          "background-color: color-mix(in srgb, oklch(20.5% 0 0) 80%, transparent)",
+          "border-color: oklch(55.1% 0.027 264.364)",
+          "border-color: oklch(54.6% 0.245 262.881)",
+          "color: oklch(55.1% 0.027 264.364)",
+          "print-color-adjust",
+          "print-color-adjust: exact",
+          "user-select",
+          "color: oklch(54.6% 0.245 262.881)"
+        ]
+      }
+    ]
+  }
+}
